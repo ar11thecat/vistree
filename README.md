@@ -19,12 +19,12 @@ vistree -c
 `vistree [-h] [-a] [-c] [path]`
 
 ## positional arguments:
-`path`: &emsp directory to visualise
+`path`:&emsp;directory to visualise
 
 ## options:
-`-h`, `--help`: &emsp show this help message and exit.\
-`-a`, `--all`: &emsp show hidden dirs and files: ex. `.git`.\
-`-c`, `--compact`: &emsp reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised.
+`-h`, `--help`:&emsp;show this help message and exit.\
+`-a`, `--all`:&emsp;show hidden dirs and files: ex. `.git`.\
+`-c`, `--compact`:&emsp;reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised.
 
 ## example output:
 ```
