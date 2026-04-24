@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+
+import argparse
+from pathlib import Path
+
+
+def main():
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("path", nargs="?", default="", help="directory to visualise")
+    parser.add_argument("-a", "--all", action="store_true", help="show hidden dirs and files")
+    parser.add_argument("-c", "--compact", action="store_true", help="reduce sprawl of branchy dirs")
+    args = parser.parse_args()
+    
+    root = Path("./" + args.path)
+    if not root.is_dir():
+        print(f"Sorry! {root} is not a directory")
+        return
+    
+    find_all_rec(root,
+                 compact=args.compact,
+                 show_hidden=args.all,
+             )
+
+
+def find_all_rec(
+    dir: Path,
+    depth: int=0,
+    bridge: str="",
+    compact: bool=False,
+    show_hidden: bool=False,
+) -> None:
+
+    print(dir.name, end='/\n')
+
+    children = sorted(dir.iterdir())
+    if not show_hidden:
+        children = [c for c in children if not c.name.startswith('.')]
+
+    if compact:
+        if depth * len(children) > 10:
+            print(bridge + f"└── ... [{len(children)}]")
+            return 
+
+    for i, d in enumerate(children):
+        is_last = i == len(children) - 1
+        connector = "└── " if is_last else "├── "
+        extension = "    " if is_last else "│   "
+
+        print(bridge + connector, end='')
+        
+        if d.is_dir():
+            find_all_rec(d,
+                         depth=depth + 1,
+                         bridge=bridge + extension,
+                         compact=compact,
+                         show_hidden=show_hidden,
+                     )
+
+        else:
+            print(d.name)
+            continue
+
+
+if __name__ == '__main__':
+    main()
