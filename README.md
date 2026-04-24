@@ -4,7 +4,7 @@ Basically, if you ever found yourself stuck in a loop of `ls` and `cd` and `ls` 
 ***Meant for Linux systems***
 
 ## how to install:
-Pull the vistree file and move it in `$HOME/.local/bin`.\
+Pull the vistree file and move it in `$HOME/.local/bin`.
 Then copy and paste this script into your `$HOME/.bashrc file`:
 ```
 # enable scripts in '$HOME/.local/bin/'
@@ -22,9 +22,9 @@ vistree -c
 `path`: directory to visualise
 
 ## options:
-`-h`, `--help`: show this help message and exit\
-`-a`, `--all`: show hidden dirs and files: ex. `.git`\
-`-c`, `--compact`: reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised\
+`-h`, `--help`: show this help message and exit.\
+`-a`, `--all`: show hidden dirs and files: ex. `.git`.\
+`-c`, `--compact`: reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised.
 
 ## example output:
 ```
