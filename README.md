@@ -27,15 +27,15 @@ vistree -c
 
 ## example output:
 ```
-  eulerianKmerAssembler/
-  ├── data/
-  │   ├── aromatase_aa.txt
-  │   └── aromatase_dna.txt
-  └── src/
-      ├── __pycache__/
-      │   └── ... [6]
-      ├── alg_utils.py
-      ├── decors.py
-      ├── main.py
-      └── sequence.py
+eulerianKmerAssembler/
+├── data/
+│   ├── aromatase_aa.txt
+│   └── aromatase_dna.txt
+└── src/
+    ├── __pycache__/
+    │   └── ... [6]
+    ├── alg_utils.py
+    ├── decors.py
+    ├── main.py
+    └── sequence.py
 ```
