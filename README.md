@@ -1,10 +1,10 @@
 # Welcome to vistree!
 Vistree is a simple python script that helps visualise the file tree inside a directory.
-Basically, if you ever found yourself stuck in a loop of `ls` and `cd` and `ls` again, this is the tool for you.
-**Meant for Linux systems**
+Basically, if you ever found yourself stuck in a loop of `ls` and `cd` and `ls` again, this is the tool for you.\
+***Meant for Linux systems***
 
 ## how to install:
-Pull the vistree file and move it in `$HOME/.local/bin`.
+Pull the vistree file and move it in `$HOME/.local/bin`.\
 Then copy and paste this script into your `$HOME/.bashrc file`:
 ```
 # enable scripts in '$HOME/.local/bin/'
