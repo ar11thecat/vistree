@@ -19,12 +19,12 @@ vistree -c
 `vistree [-h] [-a] [-c] [path]`
 
 ## positional arguments:
-`path`: directory to visualise
+`path`:    directory to visualise
 
 ## options:
-`-h`, `--help`: show this help message and exit.\
-`-a`, `--all`: show hidden dirs and files: ex. `.git`.\
-`-c`, `--compact`: reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised.
+`-h`, `--help`:    show this help message and exit.\
+`-a`, `--all`:    show hidden dirs and files: ex. `.git`.\
+`-c`, `--compact`:    reduce sprawl of branchy dirs: compacted files are represented with `... [n]` where n is the number of files not visualised.
 
 ## example output:
 ```
