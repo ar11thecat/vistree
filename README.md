@@ -5,7 +5,7 @@ _Meant for Linux systems_
 
 ## how to install:
 Pull the vistree file and move it in `$HOME/.local/bin`.
-Then copy and paste this script into your `$HOME/.bashrc file`:
+Then copy and paste this script into your `$HOME/.bashrc` file:
 ```
 # enable scripts in '$HOME/.local/bin/'
 export PATH="$HOME/.local/bin:$PATH"
