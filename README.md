@@ -29,6 +29,17 @@ vistree -c
 ## example output:
 ```
 eulerianKmerAssembler/
+├── .git/
+│   └── ... [11]
+├── .gitignore
+├── .idea/
+│   ├── .gitignore
+│   ├── eulerianKmerAssembler.iml
+│   ├── inspectionProfiles/
+│   │   └── profiles_settings.xml
+│   ├── misc.xml
+│   ├── modules.xml
+│   └── workspace.xml
 ├── data/
 │   ├── aromatase_aa.txt
 │   └── aromatase_dna.txt
